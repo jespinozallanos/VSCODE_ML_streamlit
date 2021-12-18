@@ -26,11 +26,11 @@ svc_mo = svc_m.fit(x_train,y_train)
 
 #guardar modelos en archivo pickle
 with open('lin_reg.pkl', 'wb') as li:
-    pickle.dump(lin_regr, li)
+    pickle.dump(lin_regr, li, protocol=2)
 with open('log_reg.pkl', 'wb') as lo:
-    pickle.dump(log_regr, lo)
+    pickle.dump(log_regr, lo, protocol=2)
 with open('svc_m.pkl', 'wb') as sv:
-    pickle.dump(svc_m, sv)
+    pickle.dump(svc_m, sv, protocol=2)
 
 #con ls en el terminal puedo ver los archivos creados pickle
 # siempre seleccionar interprete:  shift+control+P-->python:select interpreter-->Base
